@@ -1,0 +1,5 @@
+.details {
+ display: flex;
+ color: var(--white);
+ gap: 10px;
+}

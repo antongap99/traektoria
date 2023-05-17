@@ -1,0 +1,1 @@
+export const url = `https://test.tspb.su/test-task/vehicles`;

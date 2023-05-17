@@ -1,0 +1,88 @@
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+  font-synthesis: none;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+  --white: #7e7a7a;
+  --light: #dad9d9;
+  --black: #222020;
+  --bg-light: #2d86da;
+  --bg: hsl(180, 61%, 40%);
+  --border: hsla(169, 29%, 69%, 0.973);
+  --bg-hover: #81b3e2;
+  --card: #add9e0;
+  --card-hover: #9dc7ce;
+  --delete: #d66868;
+  --btn: #95b9db;
+  --btn-hover: #81b3e2;
+}
+
+a {
+  text-decoration: inherit;
+}
+html {
+  height: 100vh;
+}
+body {
+  height: 100%;
+  position: relative;
+  min-width: 320px;
+}
+
+h1,
+h2,
+h3,
+p,
+body {
+  margin: 0;
+}
+
+button {
+  padding: 0.6em 1.2em;
+  font-weight: 500;
+  font-family: inherit;
+  cursor: pointer;
+}
+
+.trash {
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  top: 5px;
+  right: 5px;
+  cursor: pointer;
+  border-radius: 12px;
+  transition: background-color 0.2s ease-in;
+}
+.trash:hover {
+  background-color: var(--delete);
+  -webkit-box-shadow: -1px 4px 16px 15px rgba(34, 60, 80, 0.11);
+  -moz-box-shadow: -1px 4px 16px 15px rgba(34, 60, 80, 0.11);
+  box-shadow: -1px 4px 16px 15px rgba(34, 60, 80, 0.11);
+}
+
+.btn {
+  padding: 8px;
+  border: 1px solid var(--border);
+  background-color: var(--btn);
+  transition: all 0.3s ease-in-out;
+  color: var(--black);
+  border-radius: 5px;
+}
+
+.btn:hover {
+  background-color: var(--btn-hover);
+  -webkit-box-shadow: -1px 4px 16px 15px rgba(34, 60, 80, 0.11);
+  -moz-box-shadow: -1px 4px 16px 15px rgba(34, 60, 80, 0.11);
+  box-shadow: -1px 4px 16px 15px rgba(34, 60, 80, 0.11);
+}
+
+
+.sort {
+  background-color: var(--light);
+  border: 0;
+  color: var(--black)
+}

@@ -1,0 +1,12 @@
+.dialog {
+  position: relative;
+}
+
+.tool {
+  width: 100px;
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  right: -1px;
+  z-index: 1;
+}
