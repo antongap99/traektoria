@@ -2,7 +2,6 @@
   position: relative;
   width: 100%;
   background-color: var(--bg);
-  min-height: 900px;
 }
 .wrapper {
   max-width: 1400px;

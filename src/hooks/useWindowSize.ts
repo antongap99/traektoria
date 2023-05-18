@@ -11,7 +11,6 @@ export const useWindowSize = () => {
 
   useEffect(() => {
     const resizeHandle = () => {
-      console.log('1');
       setWdith(window.innerWidth);
       setHeight(window.innerHeight);
     };
