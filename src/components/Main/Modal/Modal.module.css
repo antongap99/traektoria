@@ -1,0 +1,23 @@
+.modalWrapper {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: var(--blur);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.form {
+  width: 100%;
+  max-width: 400px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  background-color: var(--light);
+  border-radius: 10px;
+  color: var(--black)
+}

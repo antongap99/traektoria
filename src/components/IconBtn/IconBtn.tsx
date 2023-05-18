@@ -10,7 +10,7 @@ interface Props {
 
 export const IconBtn = ({ img, alt, iconStyle, handle }: Props) => (
   <div className={cn(style.IconBtn, iconStyle)} onClick={() => {
-    handle && handle()
+    handle && handle();
   }}>
     <img src={img} alt={alt} />
   </div>

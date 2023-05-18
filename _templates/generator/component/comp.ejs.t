@@ -9,7 +9,9 @@ interface Props {
 }
 
 export const <%= component_name %> = (props:Props) => {
-  return <div className = {style.container}></div>;
+  return (
+    <div className = {style.container}></div>
+  );
 };
 
 

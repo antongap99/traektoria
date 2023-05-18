@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import style from './SortingDialog.module.css';
-import { Button } from '../../Button/Button';
 import { SortingBtn } from './SortingBtn/SortingBtn';
+import { Button } from '../../../Button/Button';
 
 export const SortingDialog = () => {
   const [showBtns, setShowBtns] = useState<boolean>(false);
@@ -9,7 +9,7 @@ export const SortingDialog = () => {
 
   return (
     <div className = {style.dialog}>
-      <Button text='Сортировать' cssStyle={['btn']} handle={showBtn}/>
+      <Button type='button' text='Сортировать' cssStyle={['btn']} handle={showBtn}/>
       {
       showBtns &&
       <div className={style.tool}>

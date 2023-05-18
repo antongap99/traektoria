@@ -1,8 +1,8 @@
 import style from './SortingBtn.module.css';
 import cn from 'classnames'
-import { CardContext, ICarData } from '../../../../context/cards.context';
-import { useSort } from '../../../../hooks/useSort';
 import { useContext } from 'react';
+import { useSort } from '../../../../../hooks/useSort';
+import { CardContext, ICarData } from '../../../../../context/cards.context';
 
 interface Props {
   text?: string;

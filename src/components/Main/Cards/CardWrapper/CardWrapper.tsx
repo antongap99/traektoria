@@ -1,7 +1,8 @@
 import style from "./CardWrapper.module.css";
 import { Card } from "./Card/Card";
 import { useContext } from "react";
-import { CardContext } from "../../../context/cards.context";
+import { CardContext } from "../../../../context/cards.context";
+
 
 
 export const CardWrapper = () => {

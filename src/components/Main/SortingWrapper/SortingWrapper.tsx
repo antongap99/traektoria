@@ -1,4 +1,5 @@
-import { SortingDialog } from '../SortingDialog/SortingDialog';
+
+import { SortingDialog } from './SortingDialog/SortingDialog';
 import style from './SortingWrapper.module.css';
 
 

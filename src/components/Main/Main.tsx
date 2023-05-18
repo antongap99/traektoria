@@ -1,17 +1,19 @@
-import { CardWrapper } from './CardWrapper/CardWrapper';
-import style from './Main.module.css';
-import { SortingWrapper } from './SortingWrapper/SortingWrapper';
-
+import { useContext } from "react";
+import style from "./Main.module.css";
+import { Modal } from "./Modal/Modal";
+import { SortingWrapper } from "./SortingWrapper/SortingWrapper";
+import { ModalContext } from "../../context/modal.context";
+import { Cards } from "./Cards/Cards";
+import { MapWrapper } from "./MapWrapper/MapWrapper";
 
 export const Main = () => {
+  const {showModal} = useContext(ModalContext)
   return (
-    <main className = {style.main}>
-      <SortingWrapper/>
-      <div className={style.wrapper}>
-        <CardWrapper/>
-      </div>
-    </main>
+      <main className={style.main}>
+        <SortingWrapper />
+        <Cards/>
+        <MapWrapper/>
+        {showModal && <Modal/>}
+      </main>
   );
 };
-
-
