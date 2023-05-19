@@ -10,12 +10,11 @@ export const useWindowSize = () => {
   }, []);
 
   useEffect(() => {
-    const resizeHandle = () => {
+    const resizeHandle = ():void => {
       setWdith(window.innerWidth);
       setHeight(window.innerHeight);
     };
     window.addEventListener("resize", resizeHandle);
-
     return () => {
       window.removeEventListener("resize", resizeHandle);
     };

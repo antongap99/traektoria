@@ -7,7 +7,6 @@ interface ProviderProps {
 
 type CardIdType =  number| null
 
-
 interface IModalContext {
   showModal:boolean,
   cardId:  CardIdType

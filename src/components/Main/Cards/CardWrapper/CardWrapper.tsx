@@ -6,7 +6,7 @@ import { CardContext } from "../../../../context/cards.context";
 
 
 export const CardWrapper = () => {
-  const {cardsData} = useContext(CardContext)
+  const {cardsData} = useContext(CardContext);
   return (
       <div className={style.cards}>
         {!cardsData.length ? (

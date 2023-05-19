@@ -14,7 +14,7 @@ export const SortingDialog = () => {
       <Button
         type="button"
         text="Сортировать"
-        cssStyle={["btn"]}
+        cssStyle={"btn"}
         handle={showBtn}
       />
       {showBtns && (

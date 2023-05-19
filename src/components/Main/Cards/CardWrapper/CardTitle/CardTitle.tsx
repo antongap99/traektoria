@@ -1,4 +1,5 @@
-import { ICarData } from "../../../../context/cards.context";
+
+import { ICarData } from "../../../../../context/cards.context";
 import style from "./CardTitle.module.css";
 
 type Props = Pick<ICarData, "model" | "name" | "year">;

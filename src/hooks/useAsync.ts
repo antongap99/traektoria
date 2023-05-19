@@ -12,13 +12,11 @@ export const useAsync = <T>(
           throw new Error(`error with status ${res.status}`);
         })
         .then((data) => {
-
           setCarsData(data);
         });
     } catch (error) {
       console.log(error);
     }
   }, [url]);
-
   return [carsData, setCarsData];
 };

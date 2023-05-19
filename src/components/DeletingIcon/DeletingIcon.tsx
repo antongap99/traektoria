@@ -1,5 +1,5 @@
 import cn from "classnames";
-import style from "./IconBtn.module.css";
+import style from "./DeletingIcon.module.css";
 
 interface Props {
   img: string;
@@ -8,7 +8,7 @@ interface Props {
   handle?: () => void
 }
 
-export const IconBtn = ({ img, alt, iconStyle, handle }: Props) => (
+export const DeletingIcon = ({ img, alt, iconStyle, handle }: Props) => (
   <div className={cn(style.IconBtn, iconStyle)} onClick={() => {
     handle && handle();
   }}>

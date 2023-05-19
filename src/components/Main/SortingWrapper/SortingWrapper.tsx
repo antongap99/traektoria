@@ -5,7 +5,7 @@ import style from './SortingWrapper.module.css';
 
 export const SortingWrapper = () => {
   return (
-    <div className = {style.wrapper}>
+    <div className = {style.sortingWrapper}>
       <SortingDialog/>
     </div>
   );

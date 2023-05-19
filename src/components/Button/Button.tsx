@@ -6,7 +6,6 @@ interface Props {
   type: 'reset' | 'submit'| 'button'
   cssStyle?: string | string[];
   handle?: () => void;
-  children?: JSX.Element;
 }
 
 export const Button = ({text,type, cssStyle, handle}: Props) => {
